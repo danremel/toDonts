@@ -1,0 +1,25 @@
+{
+  "name": "toDonts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danremel/toDonts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danremel/toDonts/issues"
+  },
+  "homepage": "https://github.com/danremel/toDonts#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "morgan": "^1.8.2"
+  }
+}
