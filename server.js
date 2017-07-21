@@ -6,7 +6,8 @@ const logger = require('morgan');
 // App Settings
 const app = express();
 const port = process.env.PORT || 3000;
-
+// Application Params
+const TodontsController = require('./controller/todonts');
 // Log from Morgan
 app.use(logger('dev'));
 
@@ -14,7 +15,7 @@ app.use(logger('dev'));
 // Views
 app.set('view engine', 'hbs');
 
-
+app.use('/todonts', TodontsController);
 // Home
 app.get('/', (req, res) => {
 	res.send("Home page");
