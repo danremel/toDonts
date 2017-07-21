@@ -57,4 +57,10 @@ router.post('/', (req, res) => {
 	res.redirect('/todonts');
 });
 
+// Delete ToDonts
+router.delete('/:id', (req, res) => {
+	data.seededToDonts.splice(req.params.id, 1);
+	res.redirect('/todonts');
+});
+
 module.exports = router;
